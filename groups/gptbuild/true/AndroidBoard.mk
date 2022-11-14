@@ -117,6 +117,10 @@ $(GPTIMAGE_BIN): \
 	$(SIMG2IMG) $(INSTALLED_SUPERIMAGE_TARGET) $(INSTALLED_SUPERIMAGE_TARGET).raw
 	{{/dynamic-partitions}}
 
+	rm -rf $(INSTALLED_VBMETAIMAGE_TARGET)
+	external/avb/avbtool make_vbmeta_image --flags 3 --padding_size 4096 --output $(INSTALLED_VBMETAIMAGE_TARGET)
+
+
 	$(INTEL_PATH_BUILD)/create_gpt_image.py \
 		--create $@ \
 		--block $(BOARD_FLASH_BLOCK_SIZE) \
