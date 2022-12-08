@@ -89,6 +89,10 @@ PRODUCT_COPY_FILES += device/tencent/root/libgodzilla-sysopt_dummy_arm64-v8a.so:
 PRODUCT_COPY_FILES += device/tencent/root/libgodzilla-sysopt_dummy_armeabi-v7a.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libgodzilla-sysopt_dummy_armeabi-v7a.so
 PRODUCT_COPY_FILES += device/tencent/root/libbytehook_arm64-v8a.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libbytehook_arm64-v8a.so
 PRODUCT_COPY_FILES += device/tencent/root/libbytehook_armeabi-v7a.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libbytehook_armeabi-v7a.so
+PRODUCT_COPY_FILES += device/tencent/root/libmsaoaidauth_x86_64.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libmsaoaidauth_x86_64.so
+PRODUCT_COPY_FILES += device/tencent/root/libmsaoaidsec_x86_64.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libmsaoaidsec_x86_64.so
+PRODUCT_COPY_FILES += device/tencent/root/libmsaoaidauth_x86.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libmsaoaidauth_x86.so
+PRODUCT_COPY_FILES += device/tencent/root/libmsaoaidsec_x86.so:$(TARGET_COPY_OUT_VENDOR)/etc/config/libmsaoaidsec_x86.so
 
 PRODUCT_PRODUCT_PROPERTIES += ro.llk.enable=false
 PRODUCT_PRODUCT_PROPERTIES += vendor.thermal.enable=0
