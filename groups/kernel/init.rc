@@ -50,6 +50,8 @@ on boot
 	write /sys/kernel/debug/pstate_snb/setpoint 75
 	chmod 0666 /dev/virtpipe-render
 	chmod 0666 /dev/virtpipe-common
+	chmod 0666 /dev/virtpipe-codec
+	chmod 0666 /dev/virtpipe-sec
 
 {{/intel_pstate}}
 
