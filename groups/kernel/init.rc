@@ -52,6 +52,7 @@ on boot
 	chmod 0666 /dev/virtpipe-common
 	chmod 0666 /dev/virtpipe-codec
 	chmod 0666 /dev/virtpipe-sec
+	chmod 0666 /dev/androws_sync
 
 {{/intel_pstate}}
 
