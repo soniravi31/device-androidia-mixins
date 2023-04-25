@@ -74,5 +74,7 @@ endif
 BOARD_KERNEL_CMDLINE += \
 	  noapictimer=1
 
+BOARD_KERNEL_CMDLINE += \
+	  kfence.mode=1
 BOARD_SEPOLICY_M4DEFS += module_kernel=true
 BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/kernel
