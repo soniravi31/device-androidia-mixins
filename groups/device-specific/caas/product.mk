@@ -123,8 +123,3 @@ PRODUCT_PACKAGES += txperm \
     txpermClient \
     txpermDaemon
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.debuggable=0 \
-    persist.sys.usb.config=adb \
-    ro.build.selinux=1
-
